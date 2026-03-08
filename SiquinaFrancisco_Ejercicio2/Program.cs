@@ -29,3 +29,21 @@ autorizacion = Console.ReadLine().ToUpper();
 
 Console.Write("¿Trae USB? (S/N): ");
 usb = Console.ReadLine().ToUpper();
+
+if (usb == "S")
+{
+    Console.Write("¿Está acompañado? (S/N): ");
+    acompanado = Console.ReadLine().ToUpper();
+}
+
+
+if (hora < 0 || hora > 23)
+{
+    Console.WriteLine("Error: hora fuera de rango.");
+}
+
+if (dia < 1 || dia > 7)
+{
+    Console.WriteLine("Error: día fuera de rango.");
+}
+
